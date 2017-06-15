@@ -7,12 +7,19 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<name>CollaborationRestServices</name>
 	<url>http://maven.apache.org</url>
-	<properties>
-		<spring.version>4.3.0.RELEASE</spring.version>
-
-	</properties>
+	
 
 	<dependencies>
+
+		<!-- Collaborate Back project dependency -->
+		<dependency>
+			<groupId>com.niit</groupId>
+			<artifactId>CollaborationBackEnd</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+
+		</dependency>
+
+
 
 
 		<!-- https://mvnrepository.com/artifact/javax.servlet/jstl -->
@@ -30,7 +37,6 @@
 			<artifactId>spring-web</artifactId>
 			<version>4.3.2.RELEASE</version>
 		</dependency>
-
 		<!-- https://mvnrepository.com/artifact/org.springframework/spring-webmvc -->
 		<dependency>
 			<groupId>org.springframework</groupId>
@@ -44,14 +50,14 @@
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-core</artifactId>
-			<version>4.3.2.RELEASE</version>
+			<version>4.3.7.RELEASE</version>
 		</dependency>
 
 		<!-- https://mvnrepository.com/artifact/org.springframework/spring-context -->
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-context</artifactId>
-			<version>4.3.2.RELEASE</version>
+			<version>4.3.7.RELEASE</version>
 		</dependency>
 
 		<!-- https://mvnrepository.com/artifact/javax.servlet/javax.servlet-api -->
@@ -61,24 +67,13 @@
 			<version>3.1.0</version>
 		</dependency>
 
-		<!-- Collaborate Back roject dependency -->
-		<dependency>
-			<groupId>com.niit</groupId>
-			<artifactId>CollaborationBackEnd</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
-		</dependency>
-
-
 		<!-- https://mvnrepository.com/artifact/com.github.ferstl/spring-jdbc-oracle-ojdbc -->
 		<!-- <dependency> <groupId>com.github.ferstl</groupId> <artifactId>spring-jdbc-oracle-ojdbc</artifactId> 
 			<version>1.0.0</version> </dependency> -->
 
 		<!-- ORACLE JDBC driver, need install yourself -->
-		<dependency>
-			<groupId>com.oracle</groupId>
-			<artifactId>ojdbc6</artifactId>
-			<version>11.2.0</version>
-		</dependency>
+		<!-- <dependency> <groupId>com.oracle</groupId> <artifactId>ojdbc6</artifactId> 
+			<version>11.2.0</version> </dependency> -->
 
 
 
@@ -104,7 +99,7 @@
 		<dependency>
 			<groupId>ch.qos.logback</groupId>
 			<artifactId>logback-classic</artifactId>
-			<version>1.1.7</version>
+			<version>1.2.3</version>
 		</dependency>
 
 
@@ -137,15 +132,12 @@
 			<artifactId>spring-security-core</artifactId>
 			<version>4.2.1.RELEASE</version>
 		</dependency>
-
 		<!-- https://mvnrepository.com/artifact/org.springframework.security/spring-security-web -->
 		<dependency>
 			<groupId>org.springframework.security</groupId>
 			<artifactId>spring-security-web</artifactId>
 			<version>4.2.1.RELEASE</version>
 		</dependency>
-
-
 		<!-- https://mvnrepository.com/artifact/org.springframework.security/spring-security-config -->
 		<dependency>
 			<groupId>org.springframework.security</groupId>
